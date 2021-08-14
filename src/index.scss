@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+// font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+// font-family: 'Montserrat Alternates', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+// font-family: 'Nunito', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+// font-family: 'Quicksand', sans-serif;
+
+/* base styles */
+* {
+    margin: 0;
+    font-family: "Montserrat alternates";
+    color: #333;
+}
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+
+    h1 {
+        color: #007bff;
+    }
+
+    .links {
+        margin-left: auto;
+    }
+
+    a {
+        margin-left: 16px;
+        text-decoration: none;
+        padding: 6px;
+
+        &:hover {
+            color: #007bff;
+        }
+    }
+}
+
+.content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* blog previews / list */
+.blog-preview {
+    padding: 10px 16px;
+    margin: 20px 0;
+    border-bottom: 1px solid #fafafa;
+
+    &:hover {
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 20px;
+        color: #007bff;
+        margin-bottom: 8px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.spinner {
+    animation: spin 0.7s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* blog details page */
+.blog-details {
+    h2 {
+        font-size: 20px;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+
+    div {
+        margin: 20px 0;
+    }
+
+    button {
+        background: #007bff;
+        color: #fff;
+        border: 0;
+        padding: 8px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+}
+
+form {
+    margin: 0 auto;
+    max-width: 400px;
+    font-size: large;
+
+    input,
+    textarea {
+        box-sizing: border-box;
+        border: 1.5px solid #007bff;
+        border-radius: 6px;
+        padding: 5px;
+        margin: 7px 0;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+}
